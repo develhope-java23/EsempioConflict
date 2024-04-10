@@ -1,9 +1,14 @@
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println(buildFullName("Fabrizio", "Lagioia"));
+        System.out.println(buildFullName("Alessandro", "Gueli"));
     }
-    public static String buildFullName (String name, String surname) {
+
+    public static String buildFullName(String name, String surname) {
+        if (surname.isEmpty()) {
+            return null;
+        }
+
         return (name + " " + surname);
     }
 }
